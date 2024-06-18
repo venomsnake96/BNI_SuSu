@@ -1,0 +1,26 @@
+.button-prime{
+    font-size: 1rem;
+    font-weight: 700;
+    max-width: 400px;
+    color: var(--color-text);
+    background: var(--color-bg);
+    border: 1px solid #0000007a;
+    cursor: pointer;
+    text-align: center;
+    padding: .5rem;
+    border-radius: 25px;
+    padding: 1rem;
+    box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
+    border: unset;
+    outline: unset;
+}
+
+.button-prime:hover{
+    background: var(--color-element);
+    color: var(--color-subtex);
+    transform: scale(.9);
+    box-shadow: none;
+}
+
+
+  
