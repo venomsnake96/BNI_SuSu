@@ -1,0 +1,49 @@
+.header{
+    display: flex;
+    overflow-x: hidden;
+}
+
+.header-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.header-content h1{
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.header-content p{
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
+
+.header_logo{
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.header-imge{
+    border-radius: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header-imge img{
+    width: 100%;
+    height: auto;
+}

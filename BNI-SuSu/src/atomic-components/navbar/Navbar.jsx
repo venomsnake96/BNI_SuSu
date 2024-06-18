@@ -6,9 +6,9 @@ import "./navbar.css";
 
 const Menu = () => (
   <>
-  <a className="active" href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Summer Supplier Summit </a>
+  <a className="active" href="#Home">Home</a>
+            <a href="#">Summer Supplier Summit</a>
+            <a href="#">Expositores </a>
             <a href="#">Tickets</a>
             <a href="#">FAQs</a>
   </>
@@ -30,7 +30,7 @@ const Navbar = () => {
         <a href="#">Sign in</a>
         <Button textTo='Registrate'/>
       </div>
-      <div className="navbar-menu"></div>
+      <div className="navbar-menu">
       {toggleMenu 
       ? <RiCloseLine color="#fff" size={26} onClick={() => setToggleMenu(false)}/> 
       : <RiMenu3Line color="#fff" size={26} onClick={() => setToggleMenu(true)}/> 
@@ -46,6 +46,7 @@ const Navbar = () => {
           </div>
         </div>
        )}
+      </div>
     </div>
   );
 };
