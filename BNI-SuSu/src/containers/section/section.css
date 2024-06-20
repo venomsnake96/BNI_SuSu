@@ -1,0 +1,27 @@
+.sUsU-section{
+    background: linear-gradient(179deg, rgba(255, 0, 0, 0.82) 0%, rgba(235, 191, 57, 0.54) 62%, rgba(255, 255, 255, 1) 96%);
+}
+
+.sUsu-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    
+
+}
+
+@media screen and (max-width: 550px) {
+   
+    .title-section{
+       font-size: .8rem;
+        padding: 0;
+    }
+
+}
