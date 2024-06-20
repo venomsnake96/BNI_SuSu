@@ -4,14 +4,47 @@
 
 .sUsu-card-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    margin-bottom: 5rem;
 }
 
 
+.susu-client-asist{
+    border-radius: 25px;
+    padding: 2rem;
+    background: url(../../assets/oficce.jpg)  no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+    display: flex;
+    backdrop-filter: blur(10px);
+}
 
+.susu-client-text{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    line-height: 50px;
+    font-size: 1.2rem
+}
+
+.susu-client-asist-ex{
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.susu-client-img{
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+.susu-client-img{
+    width: 100%;
+}
 @media screen and (max-width: 780px) {
     
 

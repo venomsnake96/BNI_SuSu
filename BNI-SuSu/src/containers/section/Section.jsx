@@ -1,6 +1,6 @@
 import React from "react";
 import { Cards, Titlecomp } from "../../atomic-components";
-import { Img1, Img2, Img3, Img4 } from "../../assets/img";
+import { Img1, Img2, Img3, Img4, Img5 } from "../../assets/img";
 import "./section.css";
 const Section = () => {
   return (
@@ -52,6 +52,28 @@ const Section = () => {
           />
         </div>
       </div>
+        <div className="susu-client">
+          <Titlecomp texto={'Perfil del Asistente'}/>
+          <div>
+            <div className="susu-client-asist">
+              <div className="susu-client-text">
+              <ul>
+                <li>Empresarios y profesionales pertenecientes a BNI y otros organismos empresariales.</li>
+                <li>Directores de empresas, gerentes de compras y tomadores de decisiones.</li>
+                <li>Diversas industrias, incluyendo tecnología, manufactura, servicios, comercio, y más.</li>
+              </ul>
+              <div className="susu-client-asist-ex">
+                <h3>Expectativa de Asistencia</h3>
+                <p>Más de 600 empresarios de la Ciudad de México, Zona Metropolitana y varios estados de la República.
+                </p>
+              </div>
+              </div>
+              <div className="susu-client-img">
+              <img src={Img5} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       
     </div>
   );
