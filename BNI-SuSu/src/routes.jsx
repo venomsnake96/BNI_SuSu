@@ -6,6 +6,7 @@ import HomePage from './pages/Homepage';
 import TicketsPage from './pages/TicketsPage';
 import Registropage from './pages/Registropage'
 import ExpositorPage from './pages/ExpositorPage';
+import Login from './atomic-components/login/Login'
 
 
 
@@ -18,9 +19,9 @@ const AppRoutes = () => {
       <Route path="/expositores" element={<ExpositorPage />} />
       <Route path="/registro" element={<Registropage />} />
 
-      {/* <Route path="/login" element={<LoginPage />} />
-      <Route path="/public" element={<PublicPage />} />
-      <Route
+      <Route path="/login" element={<Login/>} />
+      {/* <Route path="/public" element={<PublicPage />} /> */}
+      {/* <Route
         path="/protected"
         element={
           <RequireAuth>

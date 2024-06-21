@@ -11,6 +11,7 @@ const TicketsPage = () => {
     </div>
       <Tickets />
       <Footer />
+    
     </>
   );
 };

@@ -3,28 +3,48 @@ import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-// import { amber } from '@mui/material/colors';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
 import TextField from "@mui/material/TextField";
 import Button from "../button/Button";
 import Button2 from "../button/Button2";
 import "./login.css";
 
 const theme = createTheme({
-    palette: {
-      primary: {
-        main: '#ffffff'
-      }
+  palette: {
+    primary: {
+      main: "#ffffff",
     },
-  });
+  },
+});
 
-
+function Copyright(props) {
+  return (
+    <Typography  variant="overline" color="text.secondary" align="center" {...props}>
+      {'Copyright © '}
+      <Link className="copy" color="inherit" href="https://www.rpmspeedcode.com/" target='_blank'>
+        Rpm Code
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
 export default function Login({ textButtonOp, textTitle, textDescrip }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    console.log({
+      email: data.get("email"),
+      password: data.get("password"),
+    });
+  };
 
   return (
     <div>
@@ -41,41 +61,39 @@ export default function Login({ textButtonOp, textTitle, textDescrip }) {
         }}
       >
         <Fade in={open}>
-          <Box  component="form" className="box-field">
+          <Box
+            className="box-field"
+            onSubmit={handleSubmit}
+            noValidate
+            sx={{ mt: 1 }}
+          >
             <h1>{textTitle}</h1>
             <p>{textDescrip}</p>
             <ThemeProvider theme={theme}>
-
-            <TextField
-              color=""
-              required
-              id="outlined-required"
-              label="Username"
-            />
-            <TextField
-              required
-              id="outlined-required"
-              label="Email"
-              className="text-field"
-            />
-            <TextField
-              
-              id="outlined-password-input"
-              label="Password"
-              type="password"
-              autoComplete="current-password"
-            />
-            <TextField
-              required
-              id="outlined-number"
-              label="Number"
-              type="number"
-              InputLabelProps={{
-                shrink: true,
-              }}
+              <TextField
+               name="username"
+                required
+                id="outlined-required"
+                label="Username"
               />
+              <TextField
+                required
+                id="outlined-required"
+                label="Email"
+                className="text-field"
+                name="email"
+              />
+              <TextField
+              name="password"
+                id="outlined-password-input"
+                label="Password"
+                type="password"
+                autoComplete="current-password"
+              />
+             
             </ThemeProvider>
-            <Button2  textTo={'Summit'} handlercClose={handleClose}/>
+            <Button2 textTo={"Summit"} handlercClose={handleClose}  onSubmited={handleSubmit} />
+          <Copyright sx={{ mt: 8, mb: 4 }} />
           </Box>
         </Fade>
       </Modal>

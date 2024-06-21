@@ -39,7 +39,7 @@ const Navbar = () => {
       </div>
       <div className="navbar_sing">
         <Login textButtonOp="Log in" textTitle='Log in' textDescrip='your acount' />
-        <NavLink to='/registro' >Sign up</NavLink>
+        <NavLink to='/registro' >Join Us</NavLink>
       </div>
       <div className="navbar-menu">
         {toggleMenu ? (
@@ -60,8 +60,8 @@ const Navbar = () => {
             <div className="navbar_menu_container-links">
               <Menu />
               <div className="navbar_menu_container-links-sing">
-                <a href="#">Sign in</a>
                 <Login textButtonOp="Log in" textTitle='Log in' textDescrip='your acount' />
+                <NavLink to='/registro' >Join Us</NavLink>
                 </div>
             </div>
           </div>

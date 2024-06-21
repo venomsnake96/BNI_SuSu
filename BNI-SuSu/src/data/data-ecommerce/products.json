@@ -1,0 +1,43 @@
+
+{"products":[
+    {
+        "id": 1,
+        "title":"Sesion Especial Mosqueteros",
+        "price": 500,
+        "thumbnail": "../../assets/ticket.png"
+        
+
+    },
+
+    {
+        "id": 2,
+        "title":"Expo",
+        "price": 400,
+        "thumnail": "../../assets/ticket.png"
+        
+
+
+    },
+
+    {
+        "id": 3,
+        "title":"Pase 15 Aniversario",
+        "price": 650,
+        "thumnail": "../../assets/ticket.png"
+        
+
+
+    },
+    {
+        "id": 4,
+        "title":"Diamante",
+        "price": 1100,
+        "thumnail": "../../assets/ticket.png"
+        
+
+    }
+]}
+  
+
+
+ 
