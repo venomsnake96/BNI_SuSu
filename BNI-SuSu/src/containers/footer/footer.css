@@ -1,19 +1,26 @@
 .footer{
-    /* background: var(--color-element); */
+    background: url(../../assets/wtcazt.jpg) no-repeat;
+    background-position:center;
+    background-size: cover;
     width: 100%;
     margin-top: 50px;
+    
+    
+}
+
+.footer-filter{
+    backdrop-filter: blur(3px);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem ;
-    
+    padding: 2rem ;
 }
 
 .logo{
     padding: 5px 10px;
     border-radius: 25px;
     background: var(--color-bg);
-    width: 200px;
+    max-width: 200px;
 }
 
 .power-by{
@@ -25,6 +32,7 @@
     align-items: center;
     gap: 1rem;
     background: var(--color-text);
+    max-width: 300px;
 }
 
 
@@ -37,4 +45,26 @@
 .footer p{
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+
+@media screen and (max-width: 780px) {
+    .power-by{
+        max-width: 200px;
+    }
+
+    .footer p{
+        font-size: 1rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 550px) {
+    .footer-filter{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+   
+
 }

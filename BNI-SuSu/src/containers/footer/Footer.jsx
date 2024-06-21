@@ -8,7 +8,8 @@ import {Logo} from '../../atomic-components';
 
 const Footer = () => {
   return (
-    <div className="footer gradeint__bg">
+    <div className="footer">
+      <div className='footer-filter'>
         <p>#SummmerSuplierSummit</p>
       <div className="logo">
         <Logo linkImg={logo} />
@@ -18,6 +19,7 @@ const Footer = () => {
         <div className='logo2'>
         <Logo linkImg={logo2}/>
         </div>
+      </div>
       </div>
       </div>
   )

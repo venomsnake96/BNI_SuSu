@@ -4,7 +4,7 @@ import { Img1, Img2, Img3, Img4, Img5 } from "../../assets/img";
 import "./section.css";
 const Section = () => {
   return (
-    <div className="sUsU-section section_padding" id="susu">
+    <div className="sUsU-section section_padding" >
       <Titlecomp texto={"Summer Supplier Summit"} />
       <div className="sUsu-card-container">
         <div>
@@ -53,7 +53,7 @@ const Section = () => {
         </div>
       </div>
         <div className="susu-client">
-          <Titlecomp texto={'Perfil del Asistente'}/>
+          <Titlecomp texto={'Perfil del Publico Asistente'}/>
           <div>
             <div className="susu-client-asist">
               <div className="susu-client-text">

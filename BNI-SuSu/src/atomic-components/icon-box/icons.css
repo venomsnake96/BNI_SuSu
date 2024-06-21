@@ -1,0 +1,59 @@
+.icons-cont{
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    display: flex;
+    gap: 5rem;
+   justify-content: space-evenly;
+}
+
+.icon-box{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-box h3{
+    color: var(--color-bg);
+}
+
+.icon{
+    position: relative;
+    display: inline-flex;
+    color: var(--color-bg);
+    background: transparent;
+    padding: 1rem ;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.icon:hover{
+    color: var(--color-text);
+    transform: translateY(-20px);
+}
+
+.icon::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--color-element);
+    border: unset;
+    z-index: -1;
+    transition: all .5s ease;
+    
+}
+
+.icon:hover::before{
+    width: 100%;
+}
+

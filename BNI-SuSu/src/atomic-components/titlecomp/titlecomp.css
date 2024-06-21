@@ -5,8 +5,18 @@
     align-items: center;
     gap: 1rem;
     width: 50%;
-    background: #cf202f75;
+    background: #cf202ff3;
     border-radius: 25px;
     margin-bottom: 50px;
     color: var(--color-bg);
+}
+
+@media screen and (max-width: 550px) {
+   
+    .title-section {
+        gap: .2rem;
+        font-size: .5rem;
+        padding: 0;
+    }
+
 }

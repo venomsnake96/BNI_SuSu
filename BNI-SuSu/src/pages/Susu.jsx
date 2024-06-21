@@ -9,8 +9,10 @@ const AppPage = () => {
       <Navbar />
       <Header />
     </div>
+    <div className="gradeint__bg2">
       <Section />
       <Footer />
+    </div>
     </>
   );
 };

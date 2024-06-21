@@ -59,8 +59,7 @@
 }
 
 .navbar_sing a:hover{
-    color: var(--color-element);
-    transform: scale(.9);
+    transform: scale(1.3);
 }
 
 

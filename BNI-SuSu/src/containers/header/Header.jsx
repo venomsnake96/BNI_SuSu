@@ -1,11 +1,12 @@
 import React from "react";
 import "./header.css";
 import {Logo, Button2} from '../../atomic-components'
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/bni-logo3.png'
 
 const Header = () => {
   return (
-    <div className="header section_padding" id="Home">
+    <div className="header section_padding">
       <div className="header-content">
         <div className="header-contet-filter">
         <h1 className="gradient__text">Summer Supplier Summit</h1>
@@ -17,8 +18,10 @@ const Header = () => {
            </div>
           </div>
            <div className="header-btn-cont"> 
-            <Button2 textTo={'Quiero Asistir'}/>
-            <Button2 textTo={'Quiero Participar'}/>
+           <NavLink to='/tickets' ><Button2 textTo={'Quiero Asistir'}/></NavLink>
+           <NavLink to='/registro' ><Button2 textTo={'Quiero Participar'}/></NavLink>
+
+          
            </div>
           
         </div>

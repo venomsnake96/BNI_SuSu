@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import { Logo, Button } from "../index";
+import { Logo, Login } from "../index";
 import logo from "../../assets/BNI.png";
 import "./navbar.css";
 import { Link, NavLink } from "react-router-dom";
@@ -13,7 +13,9 @@ const Menu = () => (
     <NavLink to="/app" className={({ isActive }) => (isActive ? "active" : "")}>
       Summer Supplier Summit
     </NavLink>
-    <a href="#">Expositores </a>
+    <NavLink to="/expositores" className={({ isActive }) => (isActive ? "active" : "")}>
+      Expositores
+    </NavLink>
     <NavLink
       to="/tickets"
       className={({ isActive }) => (isActive ? "active" : "")}>
@@ -36,8 +38,8 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar_sing">
-        <a href="#">Sign in</a>
-        <Button textTo="Registrate" />
+        <Login textButtonOp="Log in" textTitle='Log in' textDescrip='your acount' />
+        <NavLink to='/registro' >Sign up</NavLink>
       </div>
       <div className="navbar-menu">
         {toggleMenu ? (
@@ -59,8 +61,8 @@ const Navbar = () => {
               <Menu />
               <div className="navbar_menu_container-links-sing">
                 <a href="#">Sign in</a>
-                <Button textTo="Registrate" />
-              </div>
+                <Login textButtonOp="Log in" textTitle='Log in' textDescrip='your acount' />
+                </div>
             </div>
           </div>
         )}

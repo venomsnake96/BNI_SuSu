@@ -1,26 +1,41 @@
 .button-prime{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1rem;
     font-weight: 700;
     max-width: 400px;
     color: var(--color-text);
     background: var(--color-bg);
-    border: 1px solid #0000007a;
     cursor: pointer;
     text-align: center;
-    padding: .5rem;
     border-radius: 25px;
     padding: 1rem;
     box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
     border: unset;
-    outline: unset;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
 }
 
 .button-prime:hover{
-    background: var(--color-element);
-    color: var(--color-subtex);
-    transform: scale(.9);
-    box-shadow: none;
+   color: var(--color-bg);
 }
 
+.button-prime::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--color-element);
+    z-index: -1;
+    transition: all .5s ease;
+}
 
+.button-prime:hover::after{
+    width: 100%;
+}
   
