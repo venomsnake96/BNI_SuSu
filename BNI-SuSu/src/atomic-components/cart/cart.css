@@ -11,7 +11,6 @@
 
 .cart ul {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -67,7 +66,7 @@
     height: 32px;
     justify-content: center;
     padding: 4px;
-    /* position: absolute; */
+    position: absolute;
     right: 8px;
     top: 8px;
     transition: all .3s ease;
@@ -82,8 +81,8 @@
 
 .cart-button~input:checked~.cart {
     background: #000;
-    width: 200px;
-    height: 100%;
+    width: 100%;
+    height: auto;
     display: block;
 }
 .btn-clear-cont{
