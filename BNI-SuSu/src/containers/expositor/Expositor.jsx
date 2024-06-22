@@ -2,11 +2,18 @@ import React from "react";
 import "./expositor.css";
 import { Titlecomp, Logo } from "../../atomic-components";
 import logo from "../../assets/bni-logo3.png";
+import { stands } from "../../data/data-ecommerce/stands.json";
 import { Img1, Img6, Img3, Img4, Img5, Img7 } from "../../assets/img";
+import Image from "../../assets/ticket2.png";
 import Icons from "../../atomic-components/icon-box/Icons";
+import Table2 from '../../atomic-components/table/Table2'
+import { Productcard } from "../../atomic-components/productcard/Productcard";
+import {Ticketnav} from '../../atomic-components/ticket-nav/Ticketnav'
+import { CartProvider } from "../../atomic-components/contex/cart";
 
 const Expositor = () => {
   return (
+    <CartProvider>
     <div className="expositor section_padding">
       <Titlecomp texto="Participa como expositor" />
 
@@ -113,9 +120,20 @@ const Expositor = () => {
             <img src={Img7} alt="" />
           </div>
         </div>
-        <Icons/> 
+        <Icons />
+        <div className="stand-buy">
+          <Titlecomp texto="Stands" />
+          <Ticketnav />
+          <Productcard products={stands} image={Image} />
+          <div className="table-2">
+            <h3>Tu Stand incluye:</h3>
+            <Table2 />
+          </div>
+        </div>
       </div>
     </div>
+
+    </CartProvider>
   );
 };
 

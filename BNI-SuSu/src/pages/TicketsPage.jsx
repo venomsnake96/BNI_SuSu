@@ -9,8 +9,10 @@ const TicketsPage = () => {
       <Navbar />
       <Header/>
     </div>
+    <div className="solid_bg">
       <Tickets />
       <Footer />
+    </div>
     
     </>
   );

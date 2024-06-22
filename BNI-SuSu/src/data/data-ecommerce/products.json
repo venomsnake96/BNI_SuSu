@@ -3,8 +3,8 @@
     {
         "id": 1,
         "title":"Sesion Especial Mosqueteros",
-        "price": 500,
-        "thumbnail": "../../assets/ticket.png"
+        "price": 500
+        
         
 
     },
@@ -12,8 +12,8 @@
     {
         "id": 2,
         "title":"Expo",
-        "price": 400,
-        "thumnail": "../../assets/ticket.png"
+        "price": 400
+        
         
 
 
@@ -22,8 +22,8 @@
     {
         "id": 3,
         "title":"Pase 15 Aniversario",
-        "price": 650,
-        "thumnail": "../../assets/ticket.png"
+        "price": 650
+        
         
 
 
@@ -31,8 +31,8 @@
     {
         "id": 4,
         "title":"Diamante",
-        "price": 1100,
-        "thumnail": "../../assets/ticket.png"
+        "price": 1100
+        
         
 
     }

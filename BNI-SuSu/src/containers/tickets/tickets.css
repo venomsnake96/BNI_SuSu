@@ -1,25 +1,24 @@
 
-  
-  button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
-    cursor: pointer;
-    transition: border-color 0.25s;
-  }
-  button:hover {
-    border-color: #646cff;
-  }
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
+.tickets-conten{
+    margin-top: 100px;
+}
+
+
+.table{
+    margin-top: 100px;
+}
+
+
+
+.table h3{
+    background: var(--color-element);
+    color: var(--color-bg);
+    padding: 1rem;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.table small{
+   
+    color: #fff;
+}
