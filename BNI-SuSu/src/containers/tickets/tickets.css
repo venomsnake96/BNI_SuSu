@@ -1,4 +1,6 @@
-
+.shop-cart{
+    position: fixed;
+}
 .tickets-conten{
     margin-top: 100px;
 }

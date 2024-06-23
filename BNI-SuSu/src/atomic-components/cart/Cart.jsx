@@ -1,6 +1,7 @@
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart";
 import AddIcon from "@mui/icons-material/Add";
+import Badge from '@mui/material/Badge';
 import "./cart.css";
 import Img from "../../assets/tickets.png";
 
@@ -29,13 +30,21 @@ function CartItem({ title, price, quantity, addToCart }) {
   );
 }
 
+
+
+
+
 export function Cart() {
   const cartCheckboxId = useId();
-  const { cart, clearCart, addToCart } = useCart();
+  const {cart, clearCart, addToCart,} = useCart();
+  const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+
   return (
     <>
       <label className="cart-button" htmlFor={cartCheckboxId}>
+        <Badge badgeContent={totalItems} color="error">
         <ShoppingCartIcon sx={{ fontSize: 40 }} className="btn" />
+        </Badge>
       </label>
       <input id={cartCheckboxId} type="checkbox" hidden />
       <aside className="cart scale-up-center">
