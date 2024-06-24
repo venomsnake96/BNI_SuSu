@@ -21,7 +21,7 @@ const Menu = () => (
       className={({ isActive }) => (isActive ? "active" : "")}>
       Tickets
     </NavLink>
-    <a href="#">FAQs</a>
+    <a href="#">Patrocinadores</a>
   </>
 );
 

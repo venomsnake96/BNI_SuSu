@@ -175,12 +175,29 @@
  }
 
  .stand-buy{
-  
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-top: 100px;
  }
+
+ .stands{
+  max-width: 800px;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+ }
+
+ .stands img{
+  width: 100%;
+ }
+
+
+
+
+ 
 
  .table-2{
   margin-top: 50px;
