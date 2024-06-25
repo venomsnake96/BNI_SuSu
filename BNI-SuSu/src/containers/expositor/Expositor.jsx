@@ -84,7 +84,7 @@ const Expositor = () => {
         </div>
         <div className="expo-susu">
           <Titlecomp texto="Por que asustir?" />
-          <div className="expo-susui-conten">
+          <div className="expo-susu-conten">
             
             <div className="expo-susu-box">
                 <GroupsIcon color='error' sx={{fontSize:[150]}} />

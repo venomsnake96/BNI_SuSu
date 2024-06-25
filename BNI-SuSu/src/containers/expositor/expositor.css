@@ -199,10 +199,12 @@
   margin-bottom: 50px;
 }
 
-.expo-susui-conten{
+.expo-susu-conten{
   width: 100%;
   color: #fff;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 2rem;
 
@@ -212,7 +214,6 @@
   width: 100%;
   display: flex;
   align-items: center;
-  
   gap: 80px;
 }
 
@@ -304,5 +305,12 @@
   .honeycomb_Hidden:nth-child(7n + 11) 
   {
     display: block;
+  }
+}
+
+@media (max-width: 780px) 
+{
+  .expo-susu-box{
+    flex-direction: column;
   }
 }
