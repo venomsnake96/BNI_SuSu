@@ -21,7 +21,11 @@ const Menu = () => (
       className={({ isActive }) => (isActive ? "active" : "")}>
       Tickets
     </NavLink>
-    <a href="#">Patrocinadores</a>
+    <NavLink
+      to="/patrocinador"
+      className={({ isActive }) => (isActive ? "active" : "")}>
+      Patrocinadores
+    </NavLink>
   </>
 );
 

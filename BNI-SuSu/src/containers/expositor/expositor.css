@@ -184,9 +184,9 @@
  }
 
  .stands{
-  max-width: 800px;
+  max-width: 520px;
   display: flex;
-  justify-content:center ;
+  justify-content: center;
   align-items: center;
  }
 
@@ -194,15 +194,28 @@
   width: 100%;
  }
 
+.expo-susu{
+  max-width: 1024px;
+  margin-bottom: 50px;
+}
 
+.expo-susui-conten{
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 
+}
 
- 
+.expo-susu-box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+  gap: 80px;
+}
 
- .table-2{
-  margin-top: 50px;
-  color: var(--color-bg)
- }
 
 /****** Responsive *******/
 
@@ -217,6 +230,14 @@
   {
     margin: 81.25px 25px;
   }
+
+  .expo-susu-box{
+    flex-direction: column;
+  }
+
+  .stand{
+    width: 250px;
+   }
 }
 
 

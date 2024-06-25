@@ -6,7 +6,8 @@ import HomePage from './pages/Homepage';
 import TicketsPage from './pages/TicketsPage';
 import Registropage from './pages/Registropage'
 import ExpositorPage from './pages/ExpositorPage';
-import Login from './atomic-components/login/Login'
+import PatrocinadoresPage from './pages/PatrocinadoresPage';
+import Login from './atomic-components/login/Login';
 
 
 
@@ -17,6 +18,7 @@ const AppRoutes = () => {
       <Route path="/app" element={<AppPage />} />
       <Route path="/tickets" element={<TicketsPage />} />
       <Route path="/expositores" element={<ExpositorPage />} />
+      <Route path="/patrocinador" element={<PatrocinadoresPage />} />
       <Route path="/registro" element={<Registropage />} />
 
       <Route path="/login" element={<Login/>} />
