@@ -1,5 +1,5 @@
 .patrocinadores{
-    color: var(--color-bg);
+    color: var(--color-text);
 }
 
 .title-section{
@@ -22,6 +22,7 @@
     justify-content: center;
     align-items: center;
     max-width: 300px;
+    height: 250px;
     padding: 2rem 2rem;
 }
 
@@ -33,6 +34,7 @@
     padding: 20px;
     position: absolute;
     top: -70px;
+    color: white;
 }
 
 
@@ -47,12 +49,14 @@
 }
 
 .patro-box{
+    
     display: flex;
-    justify-content: space-evenly;
+    gap: 5rem;
     align-items: center;
 }
 
 .t-oro{
+    background: var(--color-text);
     border: 10px solid red;
     padding: 20px;
     border-radius: 50%;
@@ -60,6 +64,7 @@
 }
 
 .t-plata{
+    background: var(--color-text);
     border: 10px solid red;
     padding: 20px;
     border-radius: 50%;
@@ -67,6 +72,7 @@
 }
 
 .t-bronce{
+    background: var(--color-text);
     border: 10px solid red;
     padding: 20px;
     border-radius: 50%;
@@ -74,6 +80,7 @@
 }
 
 .programa-conten{
+    border: 5px solid var(--color-element);
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
@@ -84,8 +91,8 @@
 
 .programa{
     color: black;
-    justify-content: flex-start;
     display: flex;
+    justify-content: flex-start;
     gap: 10rem;
     border-bottom: 2px solid var(--color-element);
 }

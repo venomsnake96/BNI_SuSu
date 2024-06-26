@@ -5,7 +5,7 @@ import { Navbar } from "../atomic-components";
 const Registropage = () => {
   return (
     <>
-      <div className="gradeint__bg">
+      <div className="gradient__bg">
         <Navbar />
         <Header />
       </div>

@@ -95,7 +95,7 @@
 }
 .honeycomb-cell::before
 {
-  background: #fff;
+  background: #000000;
   transform: scale(1.05);
  
 }
@@ -155,7 +155,7 @@
 
 .map-info-text{
     flex: 2;
-    color: var(--color-bg);
+    color: var(--color-text);
     display: flex;
     flex-direction: column;
     
@@ -201,7 +201,7 @@
 
 .expo-susu-conten{
   width: 100%;
-  color: #fff;
+  color: var(--color-text);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,7 +218,7 @@
 }
 
 
-/****** Responsive *******/
+
 
 @media (max-width: 550px) 
 {

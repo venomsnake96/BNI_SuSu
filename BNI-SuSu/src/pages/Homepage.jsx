@@ -1,15 +1,16 @@
 import React from "react";
-import { Header, Footer, } from "../containers";
+import { Header, Footer, Section } from "../containers";
 import { Navbar } from "../atomic-components";
 
 const HomePage= () => {
   return (
     <>
-    <div className="gradeint__bg">
+    <div className="gradient__bg">
       <Navbar />
       <Header />
-      <Footer/> 
     </div>
+    <Section />
+      <Footer /> 
     </>
   );
 }

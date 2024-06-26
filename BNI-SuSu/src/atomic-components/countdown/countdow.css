@@ -1,5 +1,5 @@
 .timer-caontainer{
-color: var(--color-bg);
+color: var(--color-element);
 display: flex;
 flex-direction: column;
 justify-items: center;
@@ -14,7 +14,7 @@ align-items: center;
 }
 
 .timer{
-    border: 2px solid rgb(255, 254, 254);
+    border: 2px solid rgb(8, 8, 8);
     border-radius: 25px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);

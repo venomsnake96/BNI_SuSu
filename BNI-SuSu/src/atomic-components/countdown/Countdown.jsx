@@ -46,7 +46,7 @@ const Countdowns = () => {
 
   return (
     <div className="timer-caontainer">
-      <h2 className="gradient__text">El momento de networking se acerca</h2>
+      <h2 className="">El momento de networking se acerca</h2>
       <div className="timer">
         <section>
           <p>{ timerDays}</p>

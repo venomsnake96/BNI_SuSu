@@ -12,9 +12,10 @@ body{
     background: var(--color-bg);
 }
 
-.gradeint__bg{
-    background: radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 1) 27%, rgba(235, 217, 20, 0.36) 36%, rgba(214, 54, 54, 1) 87%);
+.gradient__bg{
+    background: var(--color-bg);
 }
+
 
 .gradeint__bg2{
     background: linear-gradient(179deg, rgba(255, 0, 0, 0.82) 0%, rgba(235, 191, 57, 0.54) 62%, rgba(255, 255, 255, 1) 96%);
@@ -29,7 +30,7 @@ body{
 
 
 .section_padding{
-    padding: 4rem 6rem;
+    padding: 4rem ;
     
 }
 

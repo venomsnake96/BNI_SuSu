@@ -5,12 +5,12 @@ import { Navbar } from "../atomic-components";
 const AppPage = () => {
   return (
     <>
-    <div className="gradeint__bg">
+    <div className="gradient__bg">
       <Navbar />
       <Header />
     </div>
-    <div className="gradeint__bg2">
-      <Section />
+    <div className="">
+      
       <Footer />
     </div>
     </>

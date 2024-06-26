@@ -6,8 +6,8 @@
     font-size: 1rem;
     font-weight: 700;
     max-width: 400px;
-    color: var(--color-text);
-    background: var(--color-bg);
+    color: var(--color-bg);
+    background: var(--color-element);
     cursor: pointer;
     text-align: center;
     border-radius: 25px;
@@ -20,7 +20,7 @@
 }
 
 .button-prime:hover{
-   color: var(--color-bg);
+   color: var(--color-text);
 }
 
 .button-prime::after{
@@ -30,7 +30,8 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--color-element);
+    border: unset;
+    background: var(--color-bg);
     z-index: -1;
     transition: all .5s ease;
 }

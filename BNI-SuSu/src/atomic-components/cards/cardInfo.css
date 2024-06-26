@@ -1,0 +1,74 @@
+.card-info{
+    position: relative;
+    width: 320px;
+    height: 500px;
+    background: var(--color-element);
+    border-radius: 20px;
+    border-bottom-left-radius: 160px ;
+    border-bottom-right-radius: 160px;
+    box-shadow: 0 15px 0 rgba(151, 151, 151, 0.795);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: transform 500ms ease;
+}
+
+.card-info:hover{
+    transform: scale(.9);
+}
+
+
+
+
+.icon-card{
+    position: relative;
+    width: 140px;
+    height: 120px;
+    background: var(--color-bg);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px ;
+    box-shadow: 0 10px 0 rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-self: start;
+    border: transparent;
+    
+}
+
+.icon-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-top-right-radius: 50px;
+    box-shadow: 15px -15px 0 15px var(--color-bg);
+}
+
+.icon-card::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-top-left-radius: 50px;
+    box-shadow: -15px -15px 0 15px var(--color-bg);
+}
+
+.contain-info{
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    padding-top: 190px;
+    text-align: center;
+    color: var(--color-bg);
+    line-height: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+

@@ -30,7 +30,7 @@
 
 .navbar_links-container a{
     margin-left: 2rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var( --color-text);
     font-weight: 700;
 }
@@ -55,7 +55,7 @@
 .navbar_sing a{
     font-size: 1.3rem;
     font-weight: 600;
-    color: var(--color-bg);
+    color: var(--color-element);
 }
 
 .navbar_sing a:hover{
@@ -101,7 +101,9 @@
     color: var(--color-bg);
 }
 
-.navbar_menu_container a:hover{
+.navbar_menu_container a:hover,
+.navbar_menu_container a.active
+{
     background: var(--color-bg);
     color: var(--color-text);
     padding: .5rem;
@@ -150,5 +152,6 @@
         display: block;
     }
 
+    
     
 }

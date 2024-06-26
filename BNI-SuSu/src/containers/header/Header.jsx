@@ -9,12 +9,12 @@ const Header = () => {
     <div className="header section_padding">
       <div className="header-content">
         <div className="header-contet-filter">
-        <h1 className="gradient__text">Summer Supplier Summit</h1>
+        <h1 className="">SUMMER <span>SUPPLIER</span> SUMMIT</h1>
         <p>La primera Expo especializada en Proveeduría BNI en México</p>
           <div className="header_logo">
            <Logo linkImg={logo}/>
            <div className="header-info-text">
-            <h2 className="gradient__text">Agosto 21, CDMX <br /><span>Worl Trade Center</span> </h2>
+            <h2 className="">Agosto 21, CDMX <br /><span>Worl Trade Center</span> </h2>
            </div>
           </div>
            <div className="header-btn-cont"> 

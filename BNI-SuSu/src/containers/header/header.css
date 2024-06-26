@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    
     overflow-x: hidden;
 }
 
@@ -15,8 +15,7 @@
     align-items: flex-start;
     flex-direction: column;
     margin-right: 5rem;
-    background: radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 1) 27%, rgba(235, 217, 20, 0.36) 36%, rgba(214, 54, 54, 1) 87%),
-        url(../../assets/wtc.jpg) no-repeat;
+    background:  linear-gradient(356deg, rgba(32, 144, 207, 0.44) 31%, rgba(255, 255, 255, 1) 91%), url(../../assets/bniwtc.jpg);
     background-size: cover;
     overflow: hidden;
     margin-bottom: 50px;
@@ -26,20 +25,26 @@
     padding: 2rem 2rem;
     width: 100%;
     height: auto;
-    backdrop-filter: blur(3px);
-    
+    backdrop-filter: blur(5px);
+
 }
 
 .header-content h1 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 4rem;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 75px;
-    letter-spacing: -0.04em;
+    
+}
 
+.header-content h1 span{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-element);
 }
 
 .header-content p {
-    font-size: 20px;
+    
+    font-size: 25px;
     line-height: 27px;
     margin-top: 1.5rem;
     font-weight: 700;
@@ -54,6 +59,7 @@
 }
 
 .header_logo h2 {
+    color: var(--color-text);
     font-size: 1.7rem;
     font-weight: 800;
 
@@ -63,7 +69,7 @@
     font-size: 1.3rem;
 }
 
-.header-btn-cont{
+.header-btn-cont {
     display: flex;
     gap: 2rem;
     justify-content: flex-end;
@@ -73,13 +79,15 @@
 
 
 
+
+
 @media screen and (max-width: 780px) {
     .header_logo {
         flex-direction: column;
         gap: 2rem;
     }
 
-    .header-btn-cont{
+    .header-btn-cont {
         justify-content: center;
         justify-content: center;
         margin-top: 30px;
@@ -90,7 +98,7 @@
 @media screen and (max-width: 550px) {
     .header-content h1 {
         font-size: 2.5rem;
-        font-weight: 900;
+        font-weight: 700;
         line-height: 40px;
         letter-spacing: -0.04em;
 
@@ -103,18 +111,23 @@
         font-weight: 700;
     }
 
+    .header-content {
+        margin-right: 0px;
+    }
+
     .header_logo h2 {
         font-size: 1.3rem;
         font-weight: 800;
-    
+
     }
-    
+
     .header_logo h2 span {
         font-size: 1.2rem;
     }
-    .header-btn-cont{
+
+    .header-btn-cont {
         flex-direction: column;
     }
-   
+
 
 }

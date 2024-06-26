@@ -8,58 +8,20 @@
     margin-bottom: 5rem;
 }
 
-
-.susu-client-asist{
-    border-radius: 25px;
-    padding: 2rem;
-    gap: 3rem;
-    background-size: cover;
-    display: flex;
-    
-}
-
-.susu-client-text{
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    align-items: center;
-    line-height: 50px;
-    font-size: 1.2rem
-}
-
-.susu-client-asist-ex{
-    font-size: 1rem;
-    line-height: 30px;
-}
-
-.susu-client-img{
-
-    flex: 1;
-    overflow: hidden;
-    border-radius: 25px;
-    max-width: 375px;
-}
-
-.susu-client-img{
+.card-info-container{
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    overflow: hidden;
+    padding-bottom: 20px;
 }
 
 
-@media screen and (max-width:1024px){
-    .susu-client-asist{
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-}
 
-@media screen and (max-width: 580px){
-    .susu-client-text{
-        font-size: 1rem;
-    }
 
-    .susu-client-asist-ex{
-        font-size: .9rem;
-    }
-}
+
+

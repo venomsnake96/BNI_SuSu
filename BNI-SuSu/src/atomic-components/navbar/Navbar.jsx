@@ -8,10 +8,10 @@ import { Link, NavLink } from "react-router-dom";
 const Menu = () => (
   <>
     <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
-      Home
+    Summer Supplier Summit
     </NavLink>
     <NavLink to="/app" className={({ isActive }) => (isActive ? "active" : "")}>
-      Summer Supplier Summit
+      Conferencias y Talleres
     </NavLink>
     <NavLink to="/expositores" className={({ isActive }) => (isActive ? "active" : "")}>
       Expositores
@@ -48,13 +48,13 @@ const Navbar = () => {
       <div className="navbar-menu">
         {toggleMenu ? (
           <RiCloseLine
-            color="#fff"
+            color="#cf2030"
             size={26}
             onClick={() => setToggleMenu(false)}
           />
         ) : (
           <RiMenu3Line
-            color="#fff"
+            color="#cf2030"
             size={26}
             onClick={() => setToggleMenu(true)}
           />

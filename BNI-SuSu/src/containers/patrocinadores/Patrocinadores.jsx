@@ -122,7 +122,7 @@ const Patrocinadores = () => {
         <div className="patro-box">
         <div className="t-bronce"><EmojiEventsIcon sx={{fontSize:[80]}} /></div>
           <div className="patro-text">
-            <h2>Bornce. Patrocinador Básico</h2>
+            <h2>Bronce. Patrocinador Básico</h2>
             <ul>
                 <li>Presencia de Marca: Logo en pantallas del evento, materiales promocionales y menciones durante el evento.</li>
                 <li>Stand Expositor: Espacio en el área de expositores.</li>

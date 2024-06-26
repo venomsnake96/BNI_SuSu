@@ -16,7 +16,7 @@
     padding: 2rem ;
 }
 
-.logo{
+.logo-cvm{
     padding: 5px 10px;
     border-radius: 25px;
     background: var(--color-bg);
@@ -36,11 +36,13 @@
 }
 
 
-.logo2{
+.logo-rpm{
     position: relative;
     display: flex;
-    gap: 1rem;
-    max-width: 220px;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    max-width: 170px;
     background: black;
     padding: 12px;
     border-radius: 25px;
@@ -48,24 +50,24 @@
     transition: .2s ease;
 }
 
-.logo2:hover{
+.logo-rpm:hover{
     transform: scale(1.2);
 }
 
 .pulse{
     position: absolute;
-    top: 9px;
+    top: 30%;
     right: 0;
 }
-
-
-
 
 .footer p{
     font-size: 1.2rem;
     font-weight: 500;
 }
 
+.img-logo-rpm{
+    max-width: 350px;
+}
 
 @media screen and (max-width: 780px) {
     .power-by{

@@ -83,7 +83,7 @@ const Expositor = () => {
           <Logo linkImg={logo} />
         </div>
         <div className="expo-susu">
-          <Titlecomp texto="Por que asustir?" />
+          <Titlecomp texto="¿Por qué asistir?" />
           <div className="expo-susu-conten">
             
             <div className="expo-susu-box">

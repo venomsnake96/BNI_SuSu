@@ -5,11 +5,11 @@ import { Navbar } from "../atomic-components";
 const PatrocinadoresPage = () => {
   return (
     <>
-    <div className='gradeint__bg'>
+    <div className='gradient__bg'>
         <Navbar />
         <Header />
     </div>
-    <div className='solid_bg'>
+    <div className='gradient__bg'>
     <Patrocinadores />
     <Footer />
     </div>

@@ -4,7 +4,7 @@ import { Productcard } from "../../atomic-components/productcard/Productcard";
 import { Ticketnav } from "../../atomic-components/ticket-nav/Ticketnav";
 import BasicTable from "../../atomic-components/table/Table";
 import Titlecomp from "../../atomic-components/titlecomp/Titlecomp";
-import Image from "../../assets/tickets.png";
+import Image from "../../assets/ticket2.png";
 import "./tickets.css";
 import { CartProvider } from "../../atomic-components/contex/cart";
 
