@@ -1,3 +1,4 @@
+import React from 'react'
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart";
 import AddIcon from "@mui/icons-material/Add";
@@ -30,12 +31,9 @@ function CartItem({ title, price, quantity, addToCart }) {
   );
 }
 
-
-
-
-
 export function Cart() {
-  const cartCheckboxId = useId();
+  
+    const cartCheckboxId = useId();
   const {cart, clearCart, addToCart,} = useCart();
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
 
@@ -66,3 +64,4 @@ export function Cart() {
     </>
   );
 }
+

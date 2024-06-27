@@ -1,6 +1,6 @@
 import React from "react";
 import "./patrocinadores.css";
-import { Logo, Titlecomp } from "../../atomic-components/index";
+import { Logo, Titlecomp, InfiniteScroll } from "../../atomic-components/index";
 import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import HubOutlinedIcon from "@mui/icons-material/HubOutlined";
@@ -10,6 +10,9 @@ const Patrocinadores = () => {
   return (
     <div className="patrocinadores section_padding">
       <Titlecomp texto="Patrocinadores" />
+      <div className="infinite-scroller">
+      <InfiniteScroll />
+      </div>
       <div className="patro-info">
         <div className="patro-card">
           <div className="patro-icon">

@@ -1,12 +1,30 @@
 .navbar{
     width: 100%;
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 6rem;
+    padding: 2rem 4rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    background: var(--color-bg);
+    z-index: 40;
+    transform: translateY(0);
+    transition: transform 500ms ease;
+}
+
+.navbar.hidden{
+    height: 4rem;
+    width: 100%;
+    z-index: 40;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: fixed;
+    transform: translateY(-100px);
+    transition: transform 500ms ease;
 }
 
 .navbar-links{
@@ -111,6 +129,9 @@
     border-radius: 25px;
 }
 
+.cart-on{
+    position: relative;
+}
 
 
 .navbar_menu_container-links-sing{

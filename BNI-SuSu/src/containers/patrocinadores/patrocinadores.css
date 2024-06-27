@@ -6,6 +6,12 @@
     margin-bottom: 50px;
 }
 
+.infinite-scroller{
+    margin-top: 100px;
+    margin-bottom: 200px;
+   
+}
+
 .patro-info{
     display: flex;
     justify-content: space-evenly;

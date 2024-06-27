@@ -11,9 +11,7 @@ const ExpositorPage= () => {
     </div>
     <div className="gradient_bg">
       <Expositor/>
-      <div className="">
       <Footer/> 
-      </div>
     </div>
     </>
   );

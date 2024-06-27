@@ -6,7 +6,7 @@ import logo from '../../assets/bni-logo3.png'
 
 const Header = () => {
   return (
-    <div className="header section_padding">
+    <div className="header">
       <div className="header-content">
         <div className="header-contet-filter">
         <h1 className="">SUMMER <span>SUPPLIER</span> SUMMIT</h1>

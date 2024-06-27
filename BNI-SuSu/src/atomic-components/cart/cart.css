@@ -1,5 +1,5 @@
 .cart {
-    background: #000;
+    background: var(--color-bg);
     display: none;
     padding: 32px;
     position: fixed;
@@ -7,18 +7,18 @@
     top: 0px;
     width: 200px;
     z-index: 100;
+    border-radius: 25px;
+    scroll-behavior: smooth;
 }
 
 .cart ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
-
 }
 
 .cart li {
-    /* max-width: 300px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,6 +54,7 @@
     gap: 8px;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .cart footer button {
@@ -68,9 +69,6 @@
     height: 32px;
     justify-content: center;
     padding: 4px;
-    position: absolute;
-    right: 8px;
-    top: 8px;
     transition: transform .5s ease;
     width: 32px;
     z-index: 9999;
@@ -83,9 +81,7 @@
 }
 
 .cart-button~input:checked~.cart {
-    background: #000;
-    width: 100%;
-    height: auto;
+    background: var(--color-bg);
     display: block;
 }
 .btn-clear-cont{

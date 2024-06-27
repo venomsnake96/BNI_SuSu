@@ -4,8 +4,6 @@ import { Titlecomp, Logo } from "../../atomic-components";
 import logo from "../../assets/bni-logo3.png";
 import { Img1, Img6, Img3, Img4, Img5, Img7, Img8 } from "../../assets/img";
 import Icons from "../../atomic-components/icon-box/Icons";
-import { Ticketnav } from "../../atomic-components/ticket-nav/Ticketnav";
-import { CartProvider } from "../../atomic-components/contex/cart";
 import GroupsIcon from '@mui/icons-material/Groups';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
@@ -14,7 +12,7 @@ import CakeIcon from '@mui/icons-material/Cake';
 
 const Expositor = () => {
   return (
-    <CartProvider>
+    
       <div className="expositor section_padding">
         <Titlecomp texto="Participa como expositor" />
 
@@ -205,14 +203,13 @@ const Expositor = () => {
           <Icons />
           <div className="stand-buy">
             <Titlecomp texto="Stands" />
-            <Ticketnav />
             <div className="stands">
               <img src={Img8} alt="img" />
             </div>
           </div>
         </div>
       </div>
-    </CartProvider>
+    
   );
 };
 

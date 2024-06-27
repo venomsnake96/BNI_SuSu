@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     overflow-x: hidden;
+    padding: 10rem 4rem 0;
 }
 
 .header-content {
