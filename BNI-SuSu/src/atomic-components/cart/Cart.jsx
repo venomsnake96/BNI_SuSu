@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react';
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import CloseIcon from '@mui/icons-material/Close';
 import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart";
@@ -7,7 +7,6 @@ import SentimentDissatisfiedIcon from '@mui/icons-material/SentimentDissatisfied
 import Badge from '@mui/material/Badge';
 import "./cart.css";
 import Img from "../../assets/ticket2.png";
-
 
 import { useCart } from "../../hooks/use.Cart";
 
@@ -21,51 +20,53 @@ function CartItem({ title, price, quantity, addToCart, removeFromCart }) {
         </div>
       </div>
       <footer>
-      <div className='cart-price'>
-        <strong>{title}</strong>
-        <small>${price}</small> 
-      </div>
-      <div className='quantity-cont'>
-        <p>Cantidad: {quantity}</p>
-        <button className='btn-add' onClick={addToCart}>
-          <AddIcon sx={{fontSize:[40]}} color='success' />
-        </button>
-        <button className='btn-less' onClick={removeFromCart}>
-          <SentimentDissatisfiedIcon sx={{fontSize:[35]}} color='error' />
-        </button>
-      </div>
+        <div className='cart-price'>
+          <strong>{title}</strong>
+          <small>${price}</small>
+        </div>
+        <div className='quantity-cont'>
+          <p>Cantidad: {quantity}</p>
+          <button className='btn-add' onClick={addToCart}>
+            <AddIcon sx={{ fontSize: [40] }} color='success' />
+          </button>
+          <button className='btn-less' onClick={removeFromCart}>
+            <SentimentDissatisfiedIcon sx={{ fontSize: [35] }} color='error' />
+          </button>
+        </div>
       </footer>
     </li>
   );
 }
 
 export function Cart() {
-  const [cartOpen, setCartopen] = useState(false)
+  const [cartOpen, setCartOpen] = useState(false);
   const widthCartContent = cartOpen ? 400 : 0;
   const openCart = () => {
-    setCartopen(true)
+    setCartOpen(true);
     document.body.style.overflow = "hidden";
-   };
+  };
 
-   const closeCart = ()  => {
-    setCartopen(false);
+  const closeCart = () => {
+    setCartOpen(false);
     document.body.style.overflow = "scroll";
-   }
-  const {cart, clearCart, addToCart, removeFromCart} = useCart();
+  };
+
+  const { cart, clearCart, addToCart, removeFromCart, calculateTotal } = useCart();
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+  const total = calculateTotal();
 
   return (
     <>
       <button onClick={openCart} className="cart-button">
         <Badge badgeContent={totalItems} color="error">
-        <ShoppingCartIcon  sx={{ fontSize: [40] }} className="btn" />
+          <ShoppingCartIcon sx={{ fontSize: [40] }} className="btn" />
         </Badge>
       </button>
-      <aside style={{width: widthCartContent }} className="cart">
+      <aside style={{ width: widthCartContent }} className="cart">
         <div className='cart-header'>
           <div>
-        <CloseIcon onClick={closeCart} />
-          <h2>Carrito</h2>
+            <CloseIcon onClick={closeCart} />
+            <h2>Carrito</h2>
           </div>
           <button onClick={clearCart} className="btn-clear">
             <RemoveShoppingCartIcon sx={{ fontSize: [35] }} />
@@ -82,8 +83,11 @@ export function Cart() {
             />
           ))}
         </ul>
+        <footer className='cart-content-footer'>
+          <h2>Total: ${total.toFixed(2)}</h2>
+          <button className='btn-pay'>Tramitar Pedido</button>
+        </footer>
       </aside>
     </>
   );
 }
-

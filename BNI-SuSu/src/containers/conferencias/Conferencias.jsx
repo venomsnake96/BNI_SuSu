@@ -4,7 +4,7 @@ import './conferencias.css'
 
 const Conferencias = () => {
   return (
-    <div>
+    <div className='conferencias-section'>
       <CardId />
     </div>
   )

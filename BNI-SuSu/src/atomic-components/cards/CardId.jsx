@@ -15,11 +15,11 @@ function CardId() {
             <div className='card__tooltip'>
               <div className="card__content">
                 <header className="card__header">
-                  <span></span>
+                  <h1>Top Cats</h1>
                 </header>
                 <div className="card__data">
                   <div className="card__image">
-                    <div className="cart__mask">
+                    <div className="card__mask">
                       <img src={Img1} alt="img" className='card__img'/>
                     </div>
                     <span className='card__status'></span>

@@ -87,13 +87,12 @@
     }
 
   ul{ 
-   height: calc(100vh - 76px - 19px);
+   height: calc(100vh - 180px - 19px);
     overflow: scroll;
     
       
         li{ 
           display: flex;
-          /* flex-direction: column; */
           padding: 15px;
           align-items: center;
           border-bottom: 1px solid var(--color-bg);
@@ -121,22 +120,24 @@
            
           }
 
-          .cart-price{
-            color: var(--color-text);
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
+          footer{
             
-            
-        }
-        footer{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              
+              .cart-price{
+                color: var(--color-text);
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+    
+                
+                
+            }
 
             .btn-add{
                 border: unset;
@@ -149,11 +150,53 @@
                 margin-left: 10px;
                 background: unset;
             }
+
+            .btn-add:active{
+                transform: scale(.9);
+            }
+
+            .btn-less:active{
+                transform: scale(.9);
+            }
         }
         }
 
 
   }  
+   
+  
+  .cart-content-footer{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid var(--color-element);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .btn-pay{
+        padding: 10px;
+        border-radius: 25px;
+        border: none;
+        background: #03acfa;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--color-bg);
+        transition: transform 300ms ease;
+        &:hover,
+        :active{
+            transform: scale(1.1);
+        }
+    }
+
+
+
     
+  }
 
 }
+
