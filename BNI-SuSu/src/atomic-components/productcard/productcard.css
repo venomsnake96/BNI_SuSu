@@ -20,9 +20,6 @@
     gap: 1rem;
 }
 
-.products:hover{
-    transform: scale(.95);
-}
 
 .products img{
     object-fit: cover;
@@ -67,15 +64,24 @@
 }
 
 .btn-shop{
-    
+    background: var(--color-bg);
     border: none;
     border-radius: 25px;
     padding: 10px 20px;
+    transition: all .3s ease;
+
+    &:hover,
+    &:active,
+    &:focus{
+        background: rgb(47, 255, 82) !important;
+        border-color: rgb(47, 255, 82);
+        color: var(--color-bg);
+        box-shadow: none !important;
+        transform: scale(.9);
+    }
 }
 
-.btn-shop:hover{
-transform: scale(.9);
-}
+
 
 
 @media screen and (max-width:580px) {

@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import CloseIcon from '@mui/icons-material/Close';
 import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart";
 import AddIcon from "@mui/icons-material/Add";
 import Badge from '@mui/material/Badge';
 import "./cart.css";
-import Img from "../../assets/tickets.png";
+import Img from "../../assets/ticket2.png";
 
 import { useId } from "react";
 import { useCart } from "../../hooks/use.Cart";
@@ -18,8 +19,9 @@ function CartItem({ title, price, quantity, addToCart }) {
           <p>Your ticket</p>
         </div>
       </div>
-      <div>
-        <strong>{title}</strong>-${price}
+      <div className='cart-price'>
+        <strong>{title}</strong>
+        ${price}
       </div>
       <footer>
         <p>Cantidad: {quantity}</p>
@@ -32,20 +34,38 @@ function CartItem({ title, price, quantity, addToCart }) {
 }
 
 export function Cart() {
-  
-    const cartCheckboxId = useId();
+  const [cartOpen, setCartopen] = useState(false)
+  const widthCartContent = cartOpen ? 400 : 0;
+  const openCart = () => {
+    setCartopen(true)
+    document.body.style.overflow = "hidden";
+   };
+
+   const closeCart = ()  => {
+    setCartopen(false);
+    document.body.style.overflow = "scroll";
+   }
   const {cart, clearCart, addToCart,} = useCart();
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
     <>
-      <label className="cart-button" htmlFor={cartCheckboxId}>
+      <button onClick={openCart} className="cart-button">
         <Badge badgeContent={totalItems} color="error">
-        <ShoppingCartIcon sx={{ fontSize: 40 }} className="btn" />
+        <ShoppingCartIcon  sx={{ fontSize: [40] }} className="btn" />
         </Badge>
-      </label>
-      <input id={cartCheckboxId} type="checkbox" hidden />
-      <aside className="cart scale-up-center">
+      </button>
+      <aside style={{width: widthCartContent }} className="cart">
+        <div className='cart-header'>
+          <div>
+        <CloseIcon onClick={closeCart} />
+          <h2>Carrito</h2>
+          </div>
+          <button onClick={clearCart} className="btn-clear">
+            <RemoveShoppingCartIcon sx={{ fontSize: [35] }} />
+            Vaciar
+          </button>
+        </div>
         <ul>
           {cart.map((product) => (
             <CartItem
@@ -55,11 +75,6 @@ export function Cart() {
             />
           ))}
         </ul>
-        <div className="btn-clear-cont">
-          <button onClick={clearCart} className="btn-clear">
-            <RemoveShoppingCartIcon />
-          </button>
-        </div>
       </aside>
     </>
   );

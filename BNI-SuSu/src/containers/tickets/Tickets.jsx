@@ -1,4 +1,6 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import { products } from "../../data/data-ecommerce/products.json";
 import { Productcard } from "../../atomic-components/productcard/Productcard";
 import BasicTable from "../../atomic-components/table/Table";
@@ -22,6 +24,18 @@ function Tickets() {
             <small>Limitado a 100 disponibles</small>
           </div>
         </div>
+        <ToastContainer
+        position="bottom-left"
+        autoClose={5000}
+        hideProgressBar
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        pauseOnVisibilityChange={false}
+        draggable
+        pauseOnHover={false}
+        theme="colored"
+         />
       </div>
     
   );

@@ -1,15 +1,19 @@
 import { useReducer, createContext } from 'react'
 import { cartReducer, cartInitialState } from '../../reducers/cart.js'
+import {toast} from 'react-toastify'
 
 export const CartContext = createContext()
 
 function useCartReducer () {
   const [state, dispatch] = useReducer(cartReducer, cartInitialState,)
 
-  const addToCart = product => dispatch({
+  const addToCart = product => {
+    dispatch({
     type: 'ADD_TO_CART',
     payload: product
-  })
+  });
+  toast.success(`Tu boleto ${product.title} añadido al carrito!`)
+}
 
   const removeFromCart = product => dispatch({
     type: 'REMOVE_FROM_CART',

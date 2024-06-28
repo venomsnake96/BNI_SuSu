@@ -51,28 +51,28 @@ const Countdowns = () => {
         <section>
           <p>{ timerDays}</p>
           <p>
-            <small>Days</small>
+            <small>Dias</small>
           </p>
         </section>
         <span>:</span>
         <section>
           <p>{timerHours}</p>
           <p>
-            <small>Hours</small>
+            <small>Horas</small>
           </p>
         </section>
         <span>:</span>
         <section>
           <p>{timerMinutes}</p>
           <p>
-            <small>Minutes</small>
+            <small>Minutos</small>
           </p>
         </section>
         <span>:</span>
         <section>
           <p>{timerSeconds}</p>
           <p>
-            <small>Seconds</small>
+            <small>Segundos</small>
           </p>
         </section>
       </div>

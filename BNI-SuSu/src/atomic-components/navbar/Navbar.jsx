@@ -69,7 +69,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar_sing">
-      <Cart />
+        {/* <Cart /> */}
         <Login textButtonOp="Log in" textTitle='Log in' textDescrip='your acount' />
         <NavLink to='/registro' >Join Us</NavLink>
       </div>
@@ -99,6 +99,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
+        <Cart />
     </div>
     
   );

@@ -40,3 +40,18 @@
     width: 100%;
 }
   
+
+@media screen and (max-width:580px){
+    .button-prime{
+        color: var(--color-element);
+        background: var(--color-bg);
+    }
+
+    .button-prime:hover{
+        color: var(--color-bg);
+    }
+
+    .button-prime::after{
+        background: var(--color-element);
+    }
+}

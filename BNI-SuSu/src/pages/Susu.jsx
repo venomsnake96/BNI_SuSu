@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Footer,  Section } from "../containers";
+import { Header, Footer,  Conferencias } from "../containers";
 import { Navbar } from "../atomic-components";
 
 const AppPage = () => {
@@ -9,8 +9,8 @@ const AppPage = () => {
       <Navbar />
       <Header />
     </div>
-    <div className="">
-      
+    <div className="gradient__bg">
+      <Conferencias />
       <Footer />
     </div>
     </>

@@ -19,7 +19,7 @@ const Footer = () => {
             <Logo linkImg={logo2} className='img-logo-rpm'/>
           </a>
           <div className="pulse circle">
-            <Brightness1Icon sx={{ fontSize: [15] }} color="error" />{" "}
+            <Brightness1Icon sx={{ fontSize: [15] }} color="error" />
           </div>
         </div>
       </div>
