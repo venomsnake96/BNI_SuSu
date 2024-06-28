@@ -12,14 +12,16 @@ function useCartReducer () {
     type: 'ADD_TO_CART',
     payload: product
   });
-  toast.success(`Tu boleto ${product.title} añadido al carrito!`)
+  toast.success(`Tu boleto ${product.title} fue añadido al carrito!`)
 }
 
-  const removeFromCart = product => dispatch({
+  const removeFromCart = product => {
+    dispatch({
     type: 'REMOVE_FROM_CART',
     payload: product
   })
-
+  toast.error(`Tu boleto ${product.title} se ha removido del carrito`)
+}
   const clearCart = () => dispatch({ type: 'CLEAR_CART' })
 
   return { state, addToCart, removeFromCart, clearCart }

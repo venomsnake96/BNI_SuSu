@@ -3,14 +3,15 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import CloseIcon from '@mui/icons-material/Close';
 import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart";
 import AddIcon from "@mui/icons-material/Add";
+import SentimentDissatisfiedIcon from '@mui/icons-material/SentimentDissatisfied';
 import Badge from '@mui/material/Badge';
 import "./cart.css";
 import Img from "../../assets/ticket2.png";
 
-import { useId } from "react";
+
 import { useCart } from "../../hooks/use.Cart";
 
-function CartItem({ title, price, quantity, addToCart }) {
+function CartItem({ title, price, quantity, addToCart, removeFromCart }) {
   return (
     <li>
       <div className="cart-img">
@@ -19,15 +20,20 @@ function CartItem({ title, price, quantity, addToCart }) {
           <p>Your ticket</p>
         </div>
       </div>
+      <footer>
       <div className='cart-price'>
         <strong>{title}</strong>
-        ${price}
+        <small>${price}</small> 
       </div>
-      <footer>
+      <div className='quantity-cont'>
         <p>Cantidad: {quantity}</p>
         <button className='btn-add' onClick={addToCart}>
           <AddIcon sx={{fontSize:[40]}} color='success' />
         </button>
+        <button className='btn-less' onClick={removeFromCart}>
+          <SentimentDissatisfiedIcon sx={{fontSize:[35]}} color='error' />
+        </button>
+      </div>
       </footer>
     </li>
   );
@@ -45,7 +51,7 @@ export function Cart() {
     setCartopen(false);
     document.body.style.overflow = "scroll";
    }
-  const {cart, clearCart, addToCart,} = useCart();
+  const {cart, clearCart, addToCart, removeFromCart} = useCart();
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
@@ -71,6 +77,7 @@ export function Cart() {
             <CartItem
               key={product.id}
               addToCart={() => addToCart(product)}
+              removeFromCart={() => removeFromCart(product)}
               {...product}
             />
           ))}

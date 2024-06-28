@@ -87,25 +87,22 @@
     }
 
   ul{ 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   height: calc(100vh - 76px - 19px);
+    overflow: scroll;
     
       
         li{ 
-          width: 200px;
-          height: 200px;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
+          /* flex-direction: column; */
+          padding: 15px;
           align-items: center;
+          border-bottom: 1px solid var(--color-bg);
           
 
           .cart-img{
-            height: 100px;
             width: 100px;
             position: relative;
+            margin-top: 10px;
 
             img{
                 width: 100%;
@@ -125,19 +122,29 @@
           }
 
           .cart-price{
+            color: var(--color-text);
+            width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
+
+            
             
         }
         footer{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
 
 
             .btn-add{
+                border: unset;
+                margin-left: 10px;
+                background: unset;
+            }
+
+            .btn-less{
                 border: unset;
                 margin-left: 10px;
                 background: unset;
