@@ -4,9 +4,8 @@ import Img1 from '../../assets/torita.png'
 import './cardId.css'
 
 
-function CardId() {
+function CardId({img, nameEmpress, nameTitle, spin, about}) {
   return (
-    <div className='card-id-container'>
         <article className='card__article'>
             <div className='card__profile'>
                 <img src={Img1} alt="img" className='card__profile__img' />
@@ -22,19 +21,18 @@ function CardId() {
                     <div className="card__mask">
                       <img src={Img1} alt="img" className='card__img'/>
                     </div>
-                    <span className='card__status'></span>
                   </div>
                   <h2 className="card__name">Toribius Maximus</h2>
                   <h3 className="card__profession">Product Tester Specialist</h3>
+                  <p className='card__pr_info'>Did ypu know how many chemicals have all the kitten meal?. We are specialist food teaster, specialist to offer you products with the better rankeded quality</p>
                   <button className='card__button'>
-                    <DataSaverOnIcon />
+                    <DataSaverOnIcon sx={{fontSize:[35]}} />
                     Mas información 
                   </button>
                 </div>
               </div>
             </div>
         </article> 
-    </div>
   )
 }
 

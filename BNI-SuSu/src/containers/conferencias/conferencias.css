@@ -1,0 +1,13 @@
+.conferencias-section{
+    margin-top: 50px;
+}
+
+.card-id-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 7rem;
+}
