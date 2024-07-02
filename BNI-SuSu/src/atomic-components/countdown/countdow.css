@@ -13,6 +13,10 @@ align-items: center;
     font-weight: 800;
 }
 
+.timer-caontainer h3{
+    margin-top: 20px;
+}
+
 .timer{
     border: 2px solid rgb(8, 8, 8);
     border-radius: 25px;

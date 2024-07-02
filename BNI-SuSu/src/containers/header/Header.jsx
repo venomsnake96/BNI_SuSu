@@ -9,13 +9,9 @@ const Header = () => {
     <div className="header">
       <div className="header-content">
         <div className="header-contet-filter">
-        <h1 className="">SUMMER <span>SUPPLIER</span> SUMMIT</h1>
-        <p>La primera Expo especializada en Proveeduría BNI en México</p>
+        <h1 className=""><span>BNI</span> <br /> SUMMER <br /> <span>SUPPLIER</span> <br /> SUMMIT</h1>
           <div className="header_logo">
            <Logo linkImg={logo}/>
-           <div className="header-info-text">
-            <h2 className="">Agosto 21, CDMX <br /><span>Worl Trade Center</span> </h2>
-           </div>
           </div>
            <div className="header-btn-cont"> 
            <NavLink to='/tickets' ><Button2 textTo={'Quiero Asistir'}/></NavLink>

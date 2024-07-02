@@ -76,6 +76,7 @@ const Countdowns = () => {
           </p>
         </section>
       </div>
+      <h3>Agosto 21, Hotel Bel Air, WTC de la Ciudad de México</h3>
     </div>
   );
 };
