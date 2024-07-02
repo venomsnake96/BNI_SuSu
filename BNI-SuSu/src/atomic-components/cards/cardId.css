@@ -31,8 +31,7 @@
     cursor: pointer;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 50px;
-    border: 2px solid var(--color-element);
+    border-radius: 50px; 
     background: var(--color-element);
     .card-image{
     height: 100%;
