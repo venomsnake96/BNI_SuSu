@@ -1,8 +1,10 @@
 import React from "react";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import "./cardId.css";
+import { NavLink } from "react-router-dom";
 
-function CardId({ name, spin, about, conferencia, horario, image, company }) {
+function CardId({ name, spin, about, conferencia, image, company }) {
+  
   return (
     <div className="single-card">
       <div className="front">
@@ -24,9 +26,11 @@ function CardId({ name, spin, about, conferencia, horario, image, company }) {
             <p>{conferencia}</p>
           </div>
         </div>
+        <NavLink to={"jornada"}>
         <button className="btn-more">
           <AddCircleIcon sx={{fontSize:[40]}} />
         </button>
+        </NavLink>
       </div>
     </div>
   );
