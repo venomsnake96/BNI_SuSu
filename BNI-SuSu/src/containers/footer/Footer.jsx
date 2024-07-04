@@ -15,9 +15,9 @@ const Footer = () => {
         </div>
         <div className="logo-rpm">
           <small>Powered by</small>
-          <a href="https://www.rpmspeedcode.com/" target="_blank">
-            <Logo linkImg={logo2} className='img-logo-rpm'/>
-          </a>
+          <div>
+            <Logo linkImg={logo2} linkTo="https://www.rpmspeedcode.com/" className='img-logo-rpm'/>
+          </div>
           <div className="pulse circle">
             <Brightness1Icon sx={{ fontSize: [15] }} color="error" />
           </div>

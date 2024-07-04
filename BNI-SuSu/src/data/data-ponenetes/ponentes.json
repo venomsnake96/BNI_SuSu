@@ -1,0 +1,22 @@
+{"ponentes":[
+    {
+        "id":1,
+        "avatar":"assets/eiichi.png",
+        "title":"Rpm code",
+        "profession":"Softwere Developer",
+        "name": "Eiichi Matsuo Sotelo",
+        "info": "Digitaliza tu potencial estamos aqui para llevarte de la mano",
+        "speech": "Nuevas herramientas digitales y su aplicacion empresarial"
+    },
+
+    {
+        "id":2,
+        "avatar":"assets/torita.png",
+        "title":"Top Cats",
+        "profession":"Product Taster",
+        "name":"Toribius Maximus",
+        "info":"Especialistas en el mercado de productos premium para tu gatito",
+        "speech":"La importancia del contenido alimentiocio de los productos para mascotas"
+
+    }
+]}
