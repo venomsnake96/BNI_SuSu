@@ -8,7 +8,7 @@ import Registropage from './pages/Registropage'
 import ExpositorPage from './pages/ExpositorPage';
 import PatrocinadoresPage from './pages/PatrocinadoresPage';
 import Login from './atomic-components/login/Login';
-import JornadasPage from './pages/JornadasPage';
+import JornadasPage from './pages/Jornadas/JornadasPage';
 
 
 const AppRoutes = () => {
@@ -18,7 +18,7 @@ const AppRoutes = () => {
       <Route path="/app" element={<AppPage />} />
       <Route path="/tickets" element={<TicketsPage />} />
       <Route path="/expositores" element={<ExpositorPage />} />
-      <Route path='/Jornadas' exact={true} element={<JornadasPage />} />  
+      <Route path='/jornadas/:id' exact={true} element={<JornadasPage />} />  
       <Route path="/patrocinador" element={<PatrocinadoresPage />} />
       <Route path="/registro" element={<Registropage />} />
       <Route path="/login" element={<Login/>} />
