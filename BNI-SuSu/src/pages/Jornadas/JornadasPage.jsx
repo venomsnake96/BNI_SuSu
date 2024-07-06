@@ -47,16 +47,21 @@ export default function JornadasPage() {
             <img src={ponente.avatar} alt={ponente.name} />
           </div>
           <div className="info_gnrl">
+            <div className="info-confe">
             <h1>{ponente.name}</h1>
             <p>{ponente.speech}</p>
+            </div>
+            <div className="info-ponente">
             <h2>{ponente.title}</h2>
             <h3>{ponente.profession}</h3>
             <p>{ponente.info}</p>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="semblanza">
+        <h1>Breve semblanza</h1>
         <p>{ponente.semblanza}</p>
         <br />
         <p>{ponente.semblanza2}</p>
