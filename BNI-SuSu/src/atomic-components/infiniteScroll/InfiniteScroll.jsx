@@ -1,5 +1,5 @@
 import React from "react";
-import {logo1, logo2, logo3} from '../../assets/logos'
+import {logo1, logo2, logo3, logo4} from '../../assets/logos'
 import './infitineScroll.css'
 
 
@@ -16,7 +16,7 @@ function InfiniteScroll() {
         <img src={logo3} alt="logo" />
       </div>
       <div className="item item4">
-        <img src={logo1} alt="logo" />
+        <img src={logo4} alt="logo" />
       </div>
       <div className="item item5">
         <img src={logo2} alt="logo" />
@@ -25,7 +25,7 @@ function InfiniteScroll() {
         <img src={logo3} alt="logo" />
       </div>
       <div className="item item7">
-        <img src={logo1} alt="logo" />
+        <img src={logo4} alt="logo" />
       </div>
       <div className="item item8">
         <img src={logo2} alt="logo" />
